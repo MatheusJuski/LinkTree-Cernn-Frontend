@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
 // URL base da sua API de Links
-const API_URL = 'http://10.12.2.161:3001/api/links'; 
+const API_URL = 'https://linktree-cernn-backend.onrender.com/api/links'; 
 
 const AdminPanel = () => {
 

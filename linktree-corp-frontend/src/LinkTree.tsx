@@ -4,7 +4,7 @@ import { Globe, Lock, X, ChevronRight } from 'lucide-react';
 import { cn } from './lib/utils.ts';
 
 // URL base da sua API de Links (Express/Prisma)
-const API_URL = 'http://10.12.2.161:3001/api/links';
+const API_URL = 'https://linktree-cernn-backend.onrender.com/api/links';
 
 interface Link {
   id: string | number;
