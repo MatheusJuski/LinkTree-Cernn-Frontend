@@ -2,9 +2,11 @@ import React, { useEffect, useState } from 'react';
 import useNetworkDetection from './useNetworkDetection';
 import { Globe, Lock, X, ChevronRight } from 'lucide-react';
 import { cn } from './lib/utils.ts';
+import BASE_API_URL from './AdminPanel.js';
 
 // URL base da sua API de Links (Express/Prisma)
-const API_URL = 'https://linktree-cernn-backend.onrender.com/api/links';
+
+const API_URL = `${BASE_API_URL}/api/links`;
 
 interface Link {
   id: string | number;
@@ -274,3 +276,4 @@ const LinkTree = () => {
 };
 
 export default LinkTree;
+
