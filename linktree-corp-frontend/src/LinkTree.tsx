@@ -2,9 +2,10 @@ import React, { useEffect, useState } from 'react';
 import useNetworkDetection from './useNetworkDetection';
 import { Globe, Lock, X, ChevronRight } from 'lucide-react';
 import { cn } from './lib/utils.ts';
-import BASE_API_URL from './AdminPanel.js';
+
 
 // URL base da sua API de Links (Express/Prisma)
+const BASE_API_URL = process.env.REACT_APP_API_URL;
 
 const API_URL = `${BASE_API_URL}/api/links`;
 

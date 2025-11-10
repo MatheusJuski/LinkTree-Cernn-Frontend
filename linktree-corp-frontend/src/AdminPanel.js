@@ -204,11 +204,11 @@ const AdminPanel = () => {
                                     <td className="px-6 py-4 font-medium text-foreground">{link.titulo}</td>
                                     <td className="px-6 py-4 text-muted-foreground">{link.departamento}</td>
                                     <td className="px-6 py-4">
-                                        <span className={`px-3 py-0.5 rounded-full text-xs font-semibold 
+                                        <span className={`px-3 py-1 rounded-full text-xs font-semibold 
                                             ${link.tipo_acesso === 'interno' 
                                                 ? 'bg-primary/20 text-primary' 
                                                 : 'bg-accent/20 text-accent'}`}>
-                                            {link.tipo_acesso === 'interno' ? '🔒 Interno' : '🌐 Público'}
+                                            {link.tipo_acesso === 'interno' ? 'Interno' : 'Público'}
                                         </span>
                                     </td>
                                     <td className="px-6 py-4 flex justify-center space-x-2">
