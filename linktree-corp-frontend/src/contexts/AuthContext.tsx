@@ -1,6 +1,8 @@
-import React, { createContext, useContext, useState, ReactNode } from 'react';
-import BASE_API_URL from '../AdminPanel';
+import React, { createContext, useContext, useState, ReactNode, useEffect } from 'react';
 
+
+
+const BASE_API_URL = process.env.REACT_APP_API_URL;
 
 
 const LOGIN_ENDPOINT = `${BASE_API_URL}/api/login`;
