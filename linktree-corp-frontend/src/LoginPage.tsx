@@ -22,7 +22,9 @@ const LoginPage: React.FC = () => {
   return (
     <div className="min-h-screen flex items-center justify-center bg-background text-foreground">
       <div className="bg-card p-8 rounded-lg border border-border shadow-2xl w-full max-w-md">
-        <h2 className="text-3xl font-bold mb-6 text-center text-primary"></h2>
+        <h2 className="text-3xl font-bold mb-6 text-center text-primary">
+          Acesso ao painel de Links
+        </h2>
         
         <form onSubmit={handleLogin} className="space-y-4">
           <input
