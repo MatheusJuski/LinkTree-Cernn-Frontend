@@ -14,7 +14,7 @@ const AdminPanel = () => {
         titulo: '',
         url: '',
         departamento: 'Geral',
-        tipo_acesso: 'publico', 
+        tipo_acesso: 'Público', 
     });
     const [editingId, setEditingId] = useState(null);
 
@@ -39,7 +39,7 @@ const AdminPanel = () => {
     
 
     const resetForm = () => {
-        setFormData({ titulo: '', url: '', departamento: 'Geral', tipo_acesso: 'publico' });
+        setFormData({ titulo: '', url: '', departamento: 'Geral', tipo_acesso: 'Público' });
         setEditingId(null);
     };
 
@@ -152,7 +152,7 @@ const AdminPanel = () => {
                            
                     <input className="col-span-full md:col-span-1 p-3 border border-border rounded-md bg-input text-foreground focus:ring-2 focus:ring-primary focus:border-primary" 
                            type="url" name="url" value={formData.url} onChange={handleChange} 
-                           placeholder="URL (Ex: http://192.168.x.y/chamados)" required />
+                           placeholder="URL (Ex: http://google.com)" required />
                            
                     <input className="col-span-full md:col-span-1 p-3 border border-border rounded-md bg-input text-foreground focus:ring-2 focus:ring-primary focus:border-primary" 
                            type="text" name="departamento" value={formData.departamento} onChange={handleChange} 
@@ -204,7 +204,7 @@ const AdminPanel = () => {
                                     <td className="px-6 py-4 font-medium text-foreground">{link.titulo}</td>
                                     <td className="px-6 py-4 text-muted-foreground">{link.departamento}</td>
                                     <td className="px-6 py-4">
-                                        <span className={`px-3 py-1 rounded-full text-xs font-semibold 
+                                        <span className={`px-3 py-0.5 rounded-full text-xs font-semibold 
                                             ${link.tipo_acesso === 'interno' 
                                                 ? 'bg-primary/20 text-primary' 
                                                 : 'bg-accent/20 text-accent'}`}>
