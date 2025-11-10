@@ -8,11 +8,11 @@ const LoginPage: React.FC = () => {
   const { login } = useAuth();
   const navigate = useNavigate();
 
-  const handleLogin = (e: React.FormEvent) => {
+  const handleLogin = async (e: React.FormEvent) => {
     e.preventDefault();
     setError('');
 
-    if (login(password)) {
+    if (await login(password)) {
       navigate('/admin'); 
     } else {
       setError('Senha incorreta.');
